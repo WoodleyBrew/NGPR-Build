@@ -1,0 +1,35 @@
+Yoshis_Island
+TLSTNode
+MD5: 481F9AFF
+UncompressedSize: 538
+
+Yoshis_Island/Run! Run! Run! (Dragon Ball Z: Infinite World)
+TLSTEntryNode
+MD5: 1F9F6374
+UncompressedSize: 16
+
+Yoshis_Island/ULiL Ichirin's Theme (Touhou 14.5)
+TLSTEntryNode
+MD5: CBE6D714
+UncompressedSize: 16
+
+Yoshis_Island/Chance Card (Fortune Street)
+TLSTEntryNode
+MD5: 1AA090B2
+UncompressedSize: 16
+
+Yoshis_Island/Shooting Star (Atelier Firis)
+TLSTEntryNode
+MD5: C5C76B3B
+UncompressedSize: 16
+
+Yoshis_Island/Blue Water, Blue Sky (Guilty Gear X2)
+TLSTEntryNode
+MD5: 26562697
+UncompressedSize: 16
+
+Yoshis_Island/Revelry of Student (Free!)
+TLSTEntryNode
+MD5: E3C83A92
+UncompressedSize: 16
+

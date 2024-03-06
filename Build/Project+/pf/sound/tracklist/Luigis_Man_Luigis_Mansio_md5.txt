@@ -1,0 +1,50 @@
+Luigis_Mansion
+TLSTNode
+MD5: 3D6CB764
+UncompressedSize: 736
+
+Luigis_Mansion/Rigged Game (Neon White)
+TLSTEntryNode
+MD5: 18D26149
+UncompressedSize: 16
+
+Luigis_Mansion/Hang Castle Zone (Sonic Heroes)
+TLSTEntryNode
+MD5: E77CE437
+UncompressedSize: 16
+
+Luigis_Mansion/The Schizophrenic Tower (Sonic: ATS)
+TLSTEntryNode
+MD5: CD7FCF2A
+UncompressedSize: 16
+
+Luigis_Mansion/What a Mansion (Sonic: ATS)
+TLSTEntryNode
+MD5: A4F10680
+UncompressedSize: 16
+
+Luigis_Mansion/Transylvania (Ducktales: Remastered)
+TLSTEntryNode
+MD5: 8D0EA2C7
+UncompressedSize: 16
+
+Luigis_Mansion/Twisted Mansion (Mario Kart 8)
+TLSTEntryNode
+MD5: FD0E8892
+UncompressedSize: 16
+
+Luigis_Mansion/Underwater Prom Queens (OMORI)
+TLSTEntryNode
+MD5: 311E2A8C
+UncompressedSize: 16
+
+Luigis_Mansion/The Collector's Games (The Owl House)
+TLSTEntryNode
+MD5: CBE83175
+UncompressedSize: 16
+
+Luigis_Mansion/Unfounded Revenge / Smashing Song of Praise
+TLSTEntryNode
+MD5: B1B52DD9
+UncompressedSize: 16
+

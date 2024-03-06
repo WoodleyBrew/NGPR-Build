@@ -1,0 +1,55 @@
+Castle_Siege
+TLSTNode
+MD5: 550C761C
+UncompressedSize: 823
+
+Castle_Siege/Plain Asia (Touhou: Imperishable Night)
+TLSTEntryNode
+MD5: BAE4D34A
+UncompressedSize: 16
+
+Castle_Siege/Dark Skies (Castle Crashers)
+TLSTEntryNode
+MD5: 7995F2B2
+UncompressedSize: 16
+
+Castle_Siege/Road Taken (Fire Emblem: Fates)
+TLSTEntryNode
+MD5: AD1AB18E
+UncompressedSize: 16
+
+Castle_Siege/VS Ares (Granblue Fantasy Versus)
+TLSTEntryNode
+MD5: F6B7283E
+UncompressedSize: 16
+
+Castle_Siege/The Opened Way (Shadow of the Colossus)
+TLSTEntryNode
+MD5: F8C67AD1
+UncompressedSize: 16
+
+Castle_Siege/A Wall With No Front Or Back (Eternal Sonata)
+TLSTEntryNode
+MD5: 62685215
+UncompressedSize: 16
+
+Castle_Siege/Camelot Castle (Sonic and the Black Knight)
+TLSTEntryNode
+MD5: BA806D35
+UncompressedSize: 16
+
+Castle_Siege/hajimete no tatakai (mamomo)
+TLSTEntryNode
+MD5: 8936FC87
+UncompressedSize: 16
+
+Castle_Siege/March to Deliverance (Fire Emblem Echoes)
+TLSTEntryNode
+MD5: E0C4AFCA
+UncompressedSize: 16
+
+Castle_Siege/I Swear (Date a Live)
+TLSTEntryNode
+MD5: CEE307ED
+UncompressedSize: 16
+

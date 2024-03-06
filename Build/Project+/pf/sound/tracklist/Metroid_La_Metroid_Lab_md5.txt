@@ -1,0 +1,55 @@
+Metroid_Lab
+TLSTNode
+MD5: 18817E7A
+UncompressedSize: 823
+
+Metroid_Lab/The Fallen Angel (The Binding of Isaac: Rebirth)
+TLSTEntryNode
+MD5: CAEE85AD
+UncompressedSize: 16
+
+Metroid_Lab/Plantera (Terraria)
+TLSTEntryNode
+MD5: BEBB96CA
+UncompressedSize: 16
+
+Metroid_Lab/GOLDENVENGEANCE (OMORI)
+TLSTEntryNode
+MD5: 870C495E
+UncompressedSize: 16
+
+Metroid_Lab/Moon Beams (Isaac Galvez)
+TLSTEntryNode
+MD5: 4047CFF2
+UncompressedSize: 16
+
+Metroid_Lab/Phendrana Drifts (Metroid Prime)
+TLSTEntryNode
+MD5: E9A8165D
+UncompressedSize: 16
+
+Metroid_Lab/Lower Brinstar (Metroid: Samus Returns)
+TLSTEntryNode
+MD5: 0738271C
+UncompressedSize: 16
+
+Metroid_Lab/Mysterious Voice (Custom Robo)
+TLSTEntryNode
+MD5: 83BA71A7
+UncompressedSize: 16
+
+Metroid_Lab/Silent Guardians (Hyrule Warriors)
+TLSTEntryNode
+MD5: EEBC83DC
+UncompressedSize: 16
+
+Metroid_Lab/Storm (Super Monkey Ball)
+TLSTEntryNode
+MD5: E573A42C
+UncompressedSize: 16
+
+Metroid_Lab/Chapter 5 Main Building Theme 2 (Corpse Party Blood Covered)
+TLSTEntryNode
+MD5: 29F4CB88
+UncompressedSize: 16
+

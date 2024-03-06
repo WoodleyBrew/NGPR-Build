@@ -1,0 +1,65 @@
+Menu
+TLSTNode
+MD5: BC336447
+UncompressedSize: 830
+
+Menu/Actor’s Anteroom (Melty Blood)
+TLSTEntryNode
+MD5: D04EF4C6
+UncompressedSize: 16
+
+Menu/Kissaten (Miru Tights)
+TLSTEntryNode
+MD5: D0F24359
+UncompressedSize: 16
+
+Menu/Ordinary Days (Lethal League)
+TLSTEntryNode
+MD5: 74DC16E1
+UncompressedSize: 16
+
+Menu/DEAR FUTURE (Mawaru Penguindrum)
+TLSTEntryNode
+MD5: D95E6D60
+UncompressedSize: 16
+
+Menu/Vanishing Point (Transistor)
+TLSTEntryNode
+MD5: 5EDF108C
+UncompressedSize: 16
+
+Menu/Scream (Lethal League)
+TLSTEntryNode
+MD5: C40A8878
+UncompressedSize: 16
+
+Menu/Alley Skies (Sonic Mega Collection Arr.)
+TLSTEntryNode
+MD5: 263B962F
+UncompressedSize: 16
+
+Menu/Kill The Beat (Lapix, KnewFoundKnowledge)
+TLSTEntryNode
+MD5: B6283794
+UncompressedSize: 16
+
+Menu/Physical Education (ANIMALS AS LEADERS)
+TLSTEntryNode
+MD5: 86C7F2A1
+UncompressedSize: 16
+
+Menu/Pay No Mind (Madeon)
+TLSTEntryNode
+MD5: F8BCC44D
+UncompressedSize: 16
+
+Menu/Snail's House (INVADER)
+TLSTEntryNode
+MD5: C17E94E4
+UncompressedSize: 16
+
+Menu/Class Trial (DANGANRONPA)
+TLSTEntryNode
+MD5: E4930C20
+UncompressedSize: 16
+

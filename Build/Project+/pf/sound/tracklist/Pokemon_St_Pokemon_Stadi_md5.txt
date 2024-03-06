@@ -1,0 +1,40 @@
+Pokemon_Stadium_2
+TLSTNode
+MD5: 45472CEE
+UncompressedSize: 592
+
+Pokemon_Stadium_2/vs. Zinnia Remix
+TLSTEntryNode
+MD5: 76DBDE05
+UncompressedSize: 16
+
+Pokemon_Stadium_2/Battle! Trainer (Let's Go)
+TLSTEntryNode
+MD5: DCED5522
+UncompressedSize: 16
+
+Pokemon_Stadium_2/Crypteque (Crypt of the Necrodancer)
+TLSTEntryNode
+MD5: 969D36F1
+UncompressedSize: 16
+
+Pokemon_Stadium_2/Night Walker (Under Night In-Birth)
+TLSTEntryNode
+MD5: B35C6857
+UncompressedSize: 16
+
+Pokemon_Stadium_2/Vs Legendary Pokemon (Gen 5)
+TLSTEntryNode
+MD5: ED1AF3DF
+UncompressedSize: 16
+
+Pokemon_Stadium_2/Boss Battle (Pokémon Typing Adventure)
+TLSTEntryNode
+MD5: A19163B3
+UncompressedSize: 16
+
+Pokemon_Stadium_2/World's End Valentine (OMORI)
+TLSTEntryNode
+MD5: 87D7CC55
+UncompressedSize: 16
+
