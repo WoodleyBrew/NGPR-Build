@@ -50,6 +50,8 @@ RSS Page Switch [DukeItOut, Kapedani]
 .alias DEFAULT_RSS_INDEX			= 0x00	# Index of main .rss to load/save, Netplay - 0xFF
 .alias NUM_PRESETS					= 0x8	# Change for more presets
 
+.alias LAST_PRESET = NUM_PRESETS - 1
+
 .macro lbd(<reg>, <addr>)
 {
     .alias  temp_Lo = <addr> & 0xFFFF
@@ -193,10 +195,13 @@ op li r5, 0x14 @ $806abd44	# /
 
 HOOK @ $806ac260	# muProcStageSwitch::selectProc
 {	
-	lwz	r29, 0x73C(r3)	# Original operation
-
-	andi. r0, r23, 0x80
-	beq+ %end%
+	li r29, -1
+	andi. r0, r23, 0x40	# \ check if L press (go back preset)
+	bne- changePreset	# /
+	li r29, 1 
+	andi. r0, r23, 0x80	# \ check if R press (go forward preset)
+	beq+ end			# /
+changePreset:
 
 	li r4, 0x1EE9				# \
 	%lwd (r3, g_sndSystem)      # |
@@ -216,12 +221,16 @@ HOOK @ $806ac260	# muProcStageSwitch::selectProc
 	%lwi (r6, 0x806AEE7B)			# / "Switch"
 	mr r7, r6
 	lhz r8, 0x10(r4)		# \
-	addi r8, r8, 0x1		# |
+	add r8, r8, r29			# |
 	cmpwi r8, NUM_PRESETS	# | add to RSS_CURRENT_PRESET (reset to 0 if past preset index)
 	blt+ notReset			# |
 	li r8, 0x0				# |
-notReset:					# |
-	sth r8, 0x10(r4)		# /
+notReset:					# /
+	cmpwi r8, 0x0			# \
+	bge+ notNegative		# |
+	li r8, LAST_PRESET		# /
+notNegative:
+	sth r8, 0x10(r4)			
 	cmpwi r8, 0x0				# \
 	bne+ notDefault				# | set default if preset 0x0
 	li r8, DEFAULT_RSS_INDEX	# |
@@ -241,6 +250,8 @@ notDefault:						# /
 	mr r3, r22
 	lwz r4, 0x654(r3)
 	%call (muProcStageSwitch__init)
+end:
+	lwz	r29, 0x73C(r22)	# Original operation
 }
 HOOK @ $806ac78c	# muProcStageSwitch::selectProc
 {
