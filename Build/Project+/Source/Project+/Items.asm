@@ -59,24 +59,7 @@ HOOK @ $806A3F60
 	bctrl					# /
 	lwz r3, 0xC4(r20)	# Original operation
 }
-HOOK @ $806AAB98
-{
-	stw r0, 0x674(r3)	# Original operation: Go down one Y column
-	lwz r0, 0x670(r3)
-	cmpwi r0, 6
-	ble+ %END%
-	li r0, 6			# Fix X column so that it doesn't try to go too far to the right
-	stw r0, 0x670(r3) 
-}
-HOOK @ $806AAAF0
-{
-	stw r0, 0x674(r3)	# Original operation: Wrap around to bottom Y column from Item Frequency bar
-	lwz r0, 0x670(r3)
-	cmpwi r0, 6
-	ble+ %END%
-	li r0, 6			# Fix X column so it doesn't try to go to the next row by accident
-	stw r0, 0x670(r3) 
-}
+
 HOOK @ $80952128
 {
     lis r12, 0x80AE          # \ Access pointer at 80ADAD5C

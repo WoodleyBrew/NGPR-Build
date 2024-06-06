@@ -186,11 +186,14 @@ HOOK @ $80029E48
 }
 
 ######################################################################################
-Analog C-Stick, L R, & Light-Shield Button Stored as Variables v2.5 [Magus, DukeItOut]
+Analog C-Stick, L R, & Light-Shield Button Stored as Variables v2.6 [Magus, DukeItOut]
 #
 # 2.4: fixes issue where controllers could influence AI shielding or C-Stick behavior
 # 2.5: made Wii Classic and GameCube C-Sticks be modified at the same rate so replays
 #		were more stable
+# 2.6: fixed exploit where the C-Stick could override Nana's inputs when she prepared
+#		to throw someone
+# goes in ButtonPresses.asm
 ######################################################################################
 #
 # LA-Basic[77] = New L or R press
@@ -247,6 +250,16 @@ Nana:
   lwz r12, 0x114(r29);  stw r12, 0x8C(r29)	# Set C-Stick Y
   lwz r12, 0x118(r29);  stw r12, 0x90(r29)	# Set Analog L
   lwz r12, 0x11C(r29);  stw r12, 0x94(r29)	# Set Analog R
+  
+  lwz r12, 0x7C(r21); lhz r12, 0x3A(r12)    # Get action
+  cmpwi r12, 0x34; blt+ finishNanaCheck        # \ Check if in a foe-holding action
+  cmpwi r12, 0x3A; bgt+ finishNanaCheck        # /
+  
+  li r12, 0;  stw r12, 0x88(r29)    # Set C-Stick Relative X to 0
+              stw r12, 0x8C(r29)    # Set C-Stick Y to 0
+              stw r12, 0x98(r29)    # \ Do the same with the "Previous C-Stick" variables
+              stw r12, 0x9C(r29)    # /
+finishNanaCheck:  
   addi r3, r29, 0x100
   addi r31, r29, 0xD0
 
@@ -429,6 +442,7 @@ loc_0x2F8:
   lfd f2, 0x20(r2);  lmw r26, 8(r1)
   addi r1, r1, 0x20
 }
+
 
 ###########################################################
 Tap Jump Requirement Checks for C-Stick not Pressed [Magus]

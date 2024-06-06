@@ -5,14 +5,17 @@
 # 901A2288 -> 80545698	Store Variables into Hitstun CILs v1.1 
 # 901A2500 -> 805457D0	Jab Reset Hitstun Linker
 # 9019B000 -> 80545810	Jab Resets v8.4
+
 #############################################
-NonTumble Hitstun Canceling v1.2b [Shanus]
+NonTumble Hitstun Canceling v1.2c [Shanus]
 #
 # 1.2b: 
 # LA-Basic[25] -> LA-Basic[82]
 # LA-Basic[30] -> LA-Basic[83]
 #
 # fixes bugs related to turbo and star items
+#
+# 1.2c: adjusts stacked stun mechanics
 #############################################
 .alias PSA_Off  = 0x805454E0
 .alias PSA_Off2 = 0x80545648
@@ -31,10 +34,10 @@ CODE @ $805454E0
 	#+0x40 Basic Variable Set: LA-Basic[82] = LA-Basic[83]
 	word 5; LA_Basic 83
 	word 5; LA_Basic 82
-	#+0x50 Additional Action Requirement: Compare: LA-Basic[82] > 0.0
+	#+0x50 Additional Action Requirement: Compare: LA-Basic[82] <= 0.0
 	word 6; word 7
 	word 5; LA_Basic 82
-	word 0; word 5
+	word 0; word 1
 	word 1; scalar 0.0
 	#+0x70 Basic Variable Set: LA-Basic[83] = 0xA
 	word 0; word 0xA
@@ -63,7 +66,7 @@ CODE @ $805454E0
 	word 0x000B0400; word PSA_Off+0x20 	#	And: Comparison Compare: IC-Basic[20003] <= 69.0
 	word 0x12000200; word PSA_Off+0x40 	# 	Basic Variable Set: LA-Basic[82] = LA-Basic[83] 
 	word 0x02010200; word 0x80FB3604 	#	Change Action: Requirement: Action=0x16, Requirement=On Ground
-	word 0x02040400; word PSA_Off+0x50 	#	Additional Action Requirement: Compare: LA-Basic[82] > 0.0
+	word 0x02040400; word PSA_Off+0x50 	#	Additional Action Requirement: Compare: LA-Basic[82] <= 0.0
 	word 0x02040400; word PSA_Off+0x90 	# 	Additional Action Requirement: Compare: LA-Float[7] <= -0.7
 	word 0x000E0000; word 0 			#Else:
 	word 0x12000200; word PSA_Off+0x80 	#	Basic Variable Set: LA-Basic[82] = 0
@@ -123,6 +126,7 @@ CODE @ $80FB3F3C # 80F9FC20 + 1431C
 	word 0x00070100; word PSA_Off2+0x08 #Sub Routine: Injection3
 	word 0x00020000; word 0 			#nop
 }
+
 
 ################################################
 Store Variables into Hitstun CILs v1.1b [Shanus]

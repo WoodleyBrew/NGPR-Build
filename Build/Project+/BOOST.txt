@@ -47,6 +47,7 @@ op blt- 0x34	   @ $8018CFC8
 .include Source/ProjectM/SpecialModes/Zero2Death.asm
 
 .include Source/Project+/EffectCommands.asm
+.include Source/Project+/EffectsEX.asm
 .include Source/Project+/Attributes.asm
 .include Source/Project+/PokeTrainer.asm
 
@@ -63,6 +64,7 @@ op blt- 0x34	   @ $8018CFC8
 .include Source/Project+/TrainingMode.asm
 .include Source/Project+/VictoryCamera.asm
 .include Source/Project+/ResultsSkip.asm
+.include Source/Project+/Unlocks.asm
 
 .include Source/LegacyTE/ASLHelper.asm
 .include Source/LegacyTE/LoadFlags.asm

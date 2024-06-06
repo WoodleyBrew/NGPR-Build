@@ -16,7 +16,7 @@
 15 - Spear Pillar
 16 - Port Town
 17 - Infinite Glacier
-18 - Smashville PMBR [Flat Zone]
+18 - Flat Zone
 19 - Castle Siege
 1C - Wario Land
 1D - Distant Planet
@@ -33,7 +33,7 @@
 29 - Temple
 2A - Yoshi's Story
 2B - Jungle Japes
-2C - Dream Land PMBR [Onett]
+2C - Onett
 2D - Dream Land
 2E - Pokemon Stadium 2
 2F - Peach Castle
