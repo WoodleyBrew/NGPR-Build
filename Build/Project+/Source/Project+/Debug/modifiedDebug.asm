@@ -5,40 +5,21 @@
 .include "Source/Project+/Debug/soGroundModule.asm"
 .include "Source/Project+/Debug/gfSceneRoot.asm"
 
-Debug Start Input v1.2b [Magus, ???, Eon]
-#
-# v1.2b: Modified to not break other pause codes
-HOOK @ $801E6D1C
-{
-  lwzx r0, r3, r4	# Original operation
-  lis r6, 0x8058
-  ori r6, r6, 0x3FFE
-  lhz r5, 0(r6)
-  rlwinm. r5, r5, 0, 31, 31
-  lis r6, 0x805B
-  ori r6, r6, 0x8A0A
-  lhz r5, 0(r6)
-  bne- loc_0x30
-  rlwinm. r7, r0, 0, 3, 3
-  beq+ %END%
-  b loc_0x50
-
-loc_0x30:
-  lis r7, 0x1000
-  not r7, r7
-  and. r12, r12, r7
-  andis. r7, r12, 0x408
-  lis r8, 0x408
-  cmpw r7, r8
-  bne+ %END%
-  oris r0, r0, 0x1000
-
-loc_0x50:
-  cmpwi r5, 0x0
-  beq+ %END%
-  li r5, 0x4	#writes 4 instead of 0 here to allow pause to be detected cleanly
-  sth r5, 0(r6)
-}
+Debug Start Input v1.2 [Magus, ???, Eon]
+* C21E6D1C 0000000D
+* 7C03202E 3CC08058
+* 60C63FFE A0A60000
+* 54A507FF 3CC0805B
+* 60C68A0A A0A60000
+* 40820010 540700C7
+* 41A20038 48000024
+* 3CE01000 7CE738F8
+* 7C003839 74070408
+* 3D000408 7C074000
+* 40A20018 64001000
+* 2C050000 41A2000C
+* 38A00004 B0A60000 #writes 4 instead of 0 here to allow pause to be detected cleanly
+* 60000000 00000000
 
 Debug On the Fly Character Switcher v1.4 (Knuckles added by Eon) [Magus, Krisan Thyme, Eon]
 
