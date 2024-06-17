@@ -97,7 +97,7 @@ Big_Blue_Z.param
 Bowser_Castle.param
 
 	STGBOWSERCASTLE.pac
-	st_bowsercastle_static.rel
+	st_final.rel
 	Bowsers_Castle.tlst
 
 ################
@@ -112,14 +112,14 @@ Bowser_Castle_L.param
 Bowser_Castle_R.param
 
 	STGBOWSERCASTLE_R_BC_CLASSIC.pac
-	st_bowsercastle_static.rel
+	st_final.rel
 	Bowsers_Castle.tlst
 
 ################
 Bowser_Castle_Z.param
 
 	STGBOWSERCASTLE_Z_BC_WORLDBOWSER.pac
-	st_bowsercastle_static.rel
+	st_final.rel
 	World_Bowser.tlst
 
 ################
@@ -158,6 +158,32 @@ Castle_Siege_L.param
 	Tower_of_Guidance.tlst
 	SFX / GFX: 0x005E / 0x004A
 	MemoryAllocation: 0x2000 (8192 bytes)
+
+################
+Castle_Siege_ML_00.param
+
+	[Substages / DualLoad]
+	- STGCASTLESIEGE.PAC
+	- STGEMBLEM_02.PAC
+
+	st_castlesiege_02.rel
+	Castle_Siege.tlst
+	SFX / GFX: 0x005E / 0x004A
+	MemoryAllocation: 0x483300 (4731648 bytes)
+	Flags: DualLoad
+
+################
+Castle_Siege_MR_00.param
+
+	[Substages / DualLoad]
+	- STGCASTLESIEGE.PAC
+	- STGEMBLEM_00.PAC
+
+	st_castlesiege_notransform.rel
+	Castle_Siege.tlst
+	SFX / GFX: 0x005E / 0x004A
+	MemoryAllocation: 0x483300 (4731648 bytes)
+	Flags: DualLoad
 
 ################
 Castle_Siege_R.param
@@ -346,7 +372,7 @@ Corneria_Z.param
 Dead_Line.param
 
 	STGDEADLINE.pac
-	st_greenhill_act2.rel
+	st_greenhill_ht.rel
 	Dead_Line.tlst
 
 ################
@@ -410,7 +436,7 @@ Dinosaur_Land.param
 Dinosaur_Land_L.param
 
 	STGDINOSAURLAND_L_BC_BOWSERMARIOWORLD.pac
-	st_bowsercastle_static.rel
+	st_final.rel
 	Bowsers_Castle.tlst
 
 ################
@@ -491,7 +517,7 @@ Draculas_Castle_Z.param
 Dream_Land.param
 
 	STGDREAMLAND.pac
-	st_dreamland64.rel
+	st_dreamland64_ht.rel
 	Dream_Land.tlst
 	SFX / GFX: 0x006C / 0x005E
 
@@ -499,7 +525,7 @@ Dream_Land.param
 Dream_Land_L.param
 
 	STGDREAMLAND_L_DL_WINTER.pac
-	st_dreamland64.rel
+	st_dreamland64_ht.rel
 	Dream_Land_Winter.tlst
 	SFX / GFX: 0x006C / 0x005E
 
@@ -507,7 +533,7 @@ Dream_Land_L.param
 Dream_Land_R.param
 
 	STGDREAMLAND_R_DL_NIGHT.pac
-	st_dreamland64.rel
+	st_dreamland64_ht.rel
 	Dream_Land.tlst
 	SFX / GFX: 0x006C / 0x005E
 
@@ -515,7 +541,7 @@ Dream_Land_R.param
 Dream_Land_Y.param
 
 	STGDREAMLAND_Y_DL_64.pac
-	st_dreamland64.rel
+	st_dreamland64_ht.rel
 	Dream_Land_64.tlst
 	SFX / GFX: 0x006C / 0x005E
 
@@ -523,7 +549,7 @@ Dream_Land_Y.param
 Dream_Land_Z.param
 
 	STGDREAMLAND_Z_DL_FALL.pac
-	st_dreamland64.rel
+	st_dreamland64_ht.rel
 	Dream_Land.tlst
 	SFX / GFX: 0x006C / 0x005E
 
@@ -540,6 +566,22 @@ Edit_Stage.param
 	SFX / GFX: 0x0069 / 0x0032
 	MemoryAllocation: 0x100000 (1048576 bytes)
 	Flags: OldSubstage
+
+################
+Event_30.param
+
+	STGWARIOWARE.pac
+	st_warioware_event.rel
+	WarioWare_Wild.tlst
+	SFX / GFX: 0x005F / 0x004D
+	Flags: FixedCamera
+
+################
+Event_31.param
+
+	STGTEMPLEOFTIME_ML_THRONE.pac
+	st_final.rel
+	Temple_of_Time.tlst
 
 ################
 Final_Destination.param
@@ -635,9 +677,9 @@ Flat_Zone_Z.param
 Fountain_of_Dreams.param
 
 	STGFOUNTAINOFDREAMS.pac
-	st_dxfountain.rel
+	st_dxfountain_ht.rel
 	Fountain_of_Dreams.tlst
-	SFX / GFX: 0xFFFF / 0x0033
+	SFX / GFX: 0x006E / 0x0033
 
 ################
 Fountain_of_Dreams_L.param
@@ -771,7 +813,7 @@ Golden_Temple_Z.param
 Green_Hill_Zone.param
 
 	STGGREENHILLZONE.pac
-	st_greenhill_act2.rel
+	st_greenhill_ht.rel
 	Green_Hill_Zone.tlst
 	SFX / GFX: 0x0066 / 0x0054
 
@@ -795,7 +837,7 @@ Green_Hill_Zone_LX.param
 Green_Hill_Zone_R.param
 
 	STGGREENHILLZONE_R_GHZ_MARBLEZONE.pac
-	st_greenhill_act2.rel
+	st_greenhill_ht.rel
 	Marble_Zone.tlst
 	SFX / GFX: 0x0066 / 0x0054
 
@@ -803,7 +845,7 @@ Green_Hill_Zone_R.param
 Green_Hill_Zone_X.param
 
 	STGGREENHILLZONE_X_GHZ_PROJECTM.pac
-	st_greenhill_act2.rel
+	st_greenhill_ht.rel
 	Green_Hill_Zone.tlst
 	SFX / GFX: 0x0066 / 0x0054
 
@@ -1445,7 +1487,7 @@ Pirate_Ship_R.param
 Pirate_Ship_Z.param
 
 	STGPIRATESHIP_Z_BC_MOLGERA.pac
-	st_bowsercastle_static.rel
+	st_final.rel
 	Molgera.tlst
 
 ################
@@ -1542,9 +1584,10 @@ Poke_Floats.param
 ################
 Poke_Floats_L.param
 
-	STGPOKEFLOATS_L_POKEFLOATS2.pac
-	st_final.rel
-	Poke_Floats.tlst
+	STGPOKEFLOATS_L_PS1.pac
+	st_dxpstadium.rel
+	Pokemon_Stadium.tlst
+	SFX / GFX: 0x006E / 0x005F
 
 ################
 Poke_Floats_R.param
@@ -1556,10 +1599,9 @@ Poke_Floats_R.param
 ################
 Poke_Floats_Z.param
 
-	STGPOKEFLOATS_Z_PS1.pac
-	st_dxpstadium.rel
-	Pokemon_Stadium.tlst
-	SFX / GFX: 0x006E / 0x005F
+	STGPOKEFLOATS_Z_MC_TREASURETOWN.pac
+	st_battle_NoShadowRotate.rel
+	Treasure_Town.tlst
 
 ################
 Port_Town.param
@@ -1846,7 +1888,7 @@ Smashville.param
 	- STGSMASHVILLE_04_MIDNIGHT.PAC
 	- STGSMASHVILLE_04_MIDNIGHT.PAC
 
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville.tlst
 	SFX / GFX: 0x0064 / 0x0032
 	Flags: OldSubstage
@@ -1855,7 +1897,7 @@ Smashville.param
 Smashville_L.param
 
 	STGSMASHVILLE_L_SV_SAKURA.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Sakura.tlst
 	SFX / GFX: 0x0064 / 0x0032
 
@@ -1863,7 +1905,7 @@ Smashville_L.param
 Smashville_R.param
 
 	STGSMASHVILLE_R_SV_BEACH.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Tropical.tlst
 	SFX / GFX: 0x0064 / 0x0032
 
@@ -1880,7 +1922,7 @@ Smashville_Y.param
 	- STGSMASHVILLE_04_MIDNIGHT.PAC
 	- STGSMASHVILLE_04_MIDNIGHT.PAC
 
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Concert.tlst
 	SFX / GFX: 0x0064 / 0x0032
 	Flags: OldSubstage
@@ -1889,7 +1931,7 @@ Smashville_Y.param
 Smashville_YL.param
 
 	STGSMASHVILLE_L_SV_SAKURA.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Concert.tlst
 	SFX / GFX: 0x0064 / 0x0032
 	Flags: OldSubstage
@@ -1898,7 +1940,7 @@ Smashville_YL.param
 Smashville_YR.param
 
 	STGSMASHVILLE_R_SV_BEACH.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Concert.tlst
 	SFX / GFX: 0x0064 / 0x0032
 	Flags: OldSubstage
@@ -1907,7 +1949,7 @@ Smashville_YR.param
 Smashville_YZ.param
 
 	STGSMASHVILLE_Z_SV_OCEAN.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Concert.tlst
 	SFX / GFX: 0x0064 / 0x0032
 	Flags: OldSubstage
@@ -1916,7 +1958,7 @@ Smashville_YZ.param
 Smashville_Z.param
 
 	STGSMASHVILLE_Z_SV_OCEAN.pac
-	st_village.rel
+	st_smashville_ht.rel
 	Smashville_Tropical.tlst
 	SFX / GFX: 0x0064 / 0x0032
 
@@ -2024,6 +2066,13 @@ Temple_of_Time_L.param
 	SFX / GFX: 0x005C / 0x0032
 
 ################
+Temple_of_Time_ML_00.param
+
+	STGTEMPLEOFTIME_ML_THRONE.pac
+	st_final.rel
+	Temple_of_Time.tlst
+
+################
 Temple_of_Time_R.param
 
 	STGTEMPLEOFTIME_R_TOT_OOT.pac
@@ -2073,6 +2122,20 @@ Training_LR.param
 
 	STGTRAININGROOM_LR_GREENSCREEN.pac
 	st_final.rel
+	Training_Room.tlst
+
+################
+Training_MR_00.param
+
+	STGTRAININGROOM_MR_DARK.pac
+	st_mansion.rel
+	Training_Room.tlst
+
+################
+Training_MR_01.param
+
+	STGTRAININGROOM_MR_CONFIG.pac
+	st_mansion.rel
 	Training_Room.tlst
 
 ################
@@ -2247,7 +2310,7 @@ Wario_Land_Z.param
 Yoshis_Island.param
 
 	STGYOSHISISLAND.pac
-	st_crayon_noshyguy.rel
+	st_crayon_noshyguy_ht.rel
 	Yoshis_Island.tlst
 
 ################

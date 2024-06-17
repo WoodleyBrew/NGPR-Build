@@ -80,12 +80,14 @@ X+L: Rumble_Falls_LX.param
 
 
 ################
-09.asl - 4 entries
+09.asl - 6 entries
 
 Base: Temple_of_Time.param
 R: Temple_of_Time_R.param
 L: Temple_of_Time_L.param
 Z: Temple_of_Time_Z.param
+0x8000: Temple_of_Time_ML_00.param
+0xC000: Event_31.param
 
 
 ################
@@ -185,13 +187,15 @@ Z: Flat_Zone_Z.param
 
 
 ################
-19.asl - 5 entries
+19.asl - 7 entries
 
 Base: Castle_Siege.param
 R: Castle_Siege_R.param
 L: Castle_Siege_L.param
 Z: Castle_Siege_Z.param
 X: Castle_Siege_X.param
+0x4000: Castle_Siege_MR_00.param
+0x8000: Castle_Siege_ML_00.param
 
 
 ################
@@ -429,14 +433,15 @@ Base: Rest_Area.param
 
 
 ################
-37.asl - 6 entries
+37.asl - 7 entries
 
 Base: Training.param
 R: Training_R.param
 L: Training_L.param
 Z: Training_Z.param
 X: Training_X.param
-L+R: Training_LR.param
+0x4000: Training_MR_00.param
+0x4001: Training_MR_01.param
 
 
 ################
@@ -573,7 +578,7 @@ Y: Mushroom_Kingdom_Y.param
 
 
 ################
-4D.asl - 7 entries
+4D.asl - 8 entries
 
 Base: WarioWare.param
 Y: WarioWare_Y.param
@@ -582,6 +587,7 @@ L: WarioWare_L.param
 Z: WarioWare_Z.param
 Y+Z: WarioWare_ZY.param
 X: WarioWare_X.param
+0xC000: Event_30.param
 
 
 ################

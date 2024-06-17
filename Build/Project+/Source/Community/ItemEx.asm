@@ -2327,13 +2327,20 @@ HOOK @ $8095219c        # stOperatorDropItemMelee::processBegin
 {
     mr r29, r3                                  # \
     li r4, 10001                                # |
-    %call (itManager__getRandBasicItemSheet)    # |
-    stw r3, 0x8(r1)                             # |
-    stw r4, 0xc(r1)                             # |
-    mr r3, r29                                  # |
-    addi r4, r1, 0x8                            # | Get item from 10001 in ItmGen rather than always picking only Bombs
+    %call (itManager__getRandBasicItemSheet)    # | Get item from 10001 in ItmGen rather than always picking only Bombs in Bomb Rain/Sudden Death
+    stw r3, 0x8(r1)                             # | 
+    stw r4, 0xc(r1)                             # /
+    li r12, -1                                  # \           
+    stw r12, 0x30(r1)                           # |
+    stw r12, 0x34(r1)                           # |
+    stw r12, 0x38(r1)                           # | allow all items to be on 
+    stw r12, 0x3C(r1)                           # |
+    stw r12, 0x40(r1)                           # |
+    stw r12, 0x44(r1)                           # /
+    mr r3, r29                                  # \
+    addi r4, r1, 0x8                            # | 
     li r5, 10001                                # |
-    li r6, 0x0                                  # |
+    addi r6, r1, 0x30                           # | pick item
     li r7, 0x0                                  # |
     %call (itManager__getLotOneItemKind)        # |
     mr r5, r3                                   # |
@@ -3235,7 +3242,6 @@ op andis. r5,r0,0xffe7 @ $806f1a50 # Set mayhem and passive aggression to false 
 #     fcmpo cr0,f1,f0   # Original operation
 #     fcmpo cr0,f1,f1
 # }
-## TODO: Spoof bob-ombs on in Sudden Death
 ## TODO: Have clone/customizer item id in ItmParam instead of it being determined based on variant id? Accessible with itValueAccesser::getConstantIntCore. Could also use for common item brres and param id
 ## TODO: Limit rolling crates to 10 otherwise it crashes
 ## TODO: Handle extra options for replays

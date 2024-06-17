@@ -22,10 +22,10 @@ Project+ Development Team
 - Beeeswith3Es
 - Bird
 - DukeItOut
+- fudgepop01
 - Fracture
 - Function
 - KingJigglypuff
-- Kirbeast
 - Layell
 - Motobug
 - Ripple
@@ -651,7 +651,7 @@ Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 24 - Pink Substitute Ivysaur by LnktheWolf, Nanobuds, Moblin, Ryztiq with credit to ART+, additional edits by Layell
 30 - 34 - Hex Maniac Ivysaur by Art+, tyleto, Layell, with credit to MetalLegacy, Ca$ino Wolf and TOCK
 AltR - Cactivy by MarioDox with credit to Nanobuds, Ike_Lawliet, @CynicalPlant
-AltZ - Clone Ivysaur by: mawwwk, Layell, and Art+ with credit to Rog for the original entryK
+AltZ - Clone Ivysaur by: mawwwk, Layell, SJ and Art+
 
 
 DEDEDE
@@ -1234,7 +1234,7 @@ VENOM
 Base - Venom port by MarioDox, fixes by Cahalan
 L - Krazoa Palace by Nezha with credit to Kapedani, KingJigglypuff, Theqmayn, and Models124717
 R - Venom Smashville by Yorch with credit to MarioDox
-Z - Planet Papetoon by MarioDox with credit to eonbot, Layell, Ryztiq, Dranakar, Wingedkoopa67, <X> / ALM5252, Mewtwo2000, PMDT
+Z - Planet Papetoon by MarioDox with credit to Eon, Layell, Ryztiq, Dranakar, Wingedkoopa67, <X> / ALM5252, Mewtwo2000, PMDT
 
 RESULTS SCREEN
 Project+ Result Screen by Motobug, denz with credit to the PMDT
@@ -1246,7 +1246,8 @@ Config Training Room by soopercool101 with credit to the PMDT
 Menus/UI/HUD
 ########################################
 
-Original CSS by ART+: Motobug, Ryztiq, modified by davidvkimball, denz, Yohan1044, mawwwk, and Kirbeast
+Original CSS by ART+: Motobug, Ryztiq, tryptech, mawwwk, credit to davidvkimball, denz, Yohan1044, and Kirbeast
+New HUD "SD Card-style" by ART+: Motobug and QuickLava
 New SSS previews, titles and images by Motobug and Bird
 Wide Preview Stage Selection Screen by Yohan1044 with custom preview images by davidvkimball, Puzzled, mawwwk
 Full size Random Stage Select previews by mawwwk, Motobug

@@ -1976,6 +1976,15 @@ HOOK @ $8003af24	# gfCollectionIO::_processLoad
 	%branch (0x8003af74)
 }
 
+HOOK @ $806b3a14	# muSelectStageTask::editListCompare
+{
+	mr r4, r31	# Original operation
+	%lbd (r12, STAGELIST_TYPE)	# \
+	cmpwi r12, 0x0				# | check if not builder stagelist
+	beq+ %end%					# /
+	mr r4, r3	# \ reverse filename comparison so it gets listed in ascending order
+	mr r3, r31	# /
+}
 HOOK @ $806b4580	# muSelectStageTask::selectingProc
 {
 	lwz	r6, 0x6068(r27)		# Original operation
@@ -2023,20 +2032,13 @@ isNotBuilderStagelist:
 	li r11, 0x1			# \ set as normal stage
 	stw r11, 0x254(r10)	# /
 	lwz r11, 0x258(r10) 	# get selected id	
-	lwz r0, 0x6154(r10)		# \
-	cmpwi r0, 0x2			# | check if hit random
-	bne+ notRandom			# /
-	%lwd (r8, g_muSelectStageFileTask)	# \
-	lwz r8, 0x60(r8)					# | subtract from number of stages
-	subi r8, r8, 0x1					# |
-	sub r11, r8, r11					# /
-notRandom:
 	add r11, r11, r9			# | set ASL_BUTTON = type + selectedid
 	%swd (r11, r8, ASL_BUTTON)	# /
 	lbz r11, -0x1(r12)	# \ set stagekind 
 	stw r11, 0x258(r10)	# /
 }
 
+## TODO: Classic/All Star Mode ASL from certain range (use all L-alts?)
 ## TODO: Also investigate random substage handling with replays
 ## TODO: Song id in results based on costume id?
 ## TODO: Investigate same song id playing during endless friendlies?
