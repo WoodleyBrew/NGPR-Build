@@ -1429,6 +1429,7 @@ SSS Stage Lists and Alt Stage Display [DukeItOut, Kapedani]
 ###########################################################
 
 .alias muSelectStageSwitch__selectRandom		= 0x806b74f0
+.alias muSelectStageSwitch__dispPreview			= 0x806b6ab4
 .alias g_muSelectStageFileTask					= 0x806BB388
 .alias muSelectStageFileTask__deleteAllFileData	= 0x806b8768
 .alias MuStageTblAcces_GetStageKind				= 0x806b8f50
@@ -1836,6 +1837,9 @@ displayStageList:
 	cmpw r11, r10
 	bne+ notReady
 ready:
+	mr r3, r29									# \
+	li r4, 0x35									# | set preview to 0x35 (page button) to make preview not appear in stage builder page
+	%call (muSelectStageSwitch__dispPreview)	# /
 	lwz r4, 0x228(r29)		# \
 	stb r4, 0x605A(r29)		# | go to stage builder 
 	li r4, 0x2				# |
